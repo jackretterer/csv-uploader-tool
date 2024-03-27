@@ -17,19 +17,20 @@ To run the CSV Uploader Tool locally, follow these steps:
 
 1. Clone the repository: 
 
-### `git clone https://github.com/jack-retterer/csv-uploader-tool.git`
+```git clone https://github.com/jack-retterer/csv-uploader-tool.git```
 
 2. Navigate to the project directory:
 
-### `cd csv-uploader-tool`
+```cd csv-uploader-tool```
 
 3. Install the dependencies:
 
-### `npm install`
+```npm install```
 
 4. Start the development server:
 
-### `npm start`
+```npm start```
+
 5. Open your browser and visit `http://localhost:3000` to view the application.
 
 ## Usage
