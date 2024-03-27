@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# CSV Uploader Tool
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The CSV Uploader Tool is a user-friendly web application that allows you to map data from a CSV file to a database schema and preview the resulting data. It provides a simple and intuitive interface for specifying the mapping between CSV columns and database columns, with options to combine, separate, or map columns normally.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Upload a CSV file and view its columns
+- Enter a database schema (comma-separated) to define the target structure
+- Map CSV columns to database columns using a user-friendly interface
+- Choose the mapping action for each column: Combine, Separate, or Normal
+- Preview the mapped data in a table format
+- Download the preview data as a CSV file
+
+## Getting Started
+
+To run the CSV Uploader Tool locally, follow these steps:
+
+1. Clone the repository: 
+
+### `git clone https://github.com/jack-retterer/csv-uploader-tool.git`
+
+2. Navigate to the project directory:
+
+### `cd csv-uploader-tool`
+
+3. Install the dependencies:
+
+### `npm install`
+
+4. Start the development server:
 
 ### `npm start`
+5. Open your browser and visit `http://localhost:3000` to view the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Click the "Choose File" button to select a CSV file from your local machine.
 
-### `npm test`
+2. Once the file is uploaded, the CSV columns will be displayed in the "CSV Columns" section.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. In the "Database Schema" section, enter the desired database schema as comma-separated values (e.g., "Name, Class, School, Location").
 
-### `npm run build`
+4. The "Mapping" section will appear, allowing you to map the CSV columns to the corresponding database columns.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. For each mapping row:
+- Select the desired database column from the dropdown menu.
+- Enter the CSV column(s) you want to map to the selected database column. If mapping multiple columns, separate them with commas.
+- Choose the appropriate mapping action: Combine, Separate, or Normal.
+- Selecting "Combine" will combine the specified columns into a single column in the preview.
+- Selecting "Separate" will separate the specified columns into multiple rows in the preview.
+- Selecting "Normal" will not do anything. The columns will be included normally.
+- Click the "Add Mapping" button to add additional mapping rows if needed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. Once you have specified all the mappings, click the "Preview" button to generate a preview of the mapped data.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. The preview will be displayed in a table format, showing the resulting data based on your mapping configuration.
 
-### `npm run eject`
+8. If you want to download the preview data as a CSV file, click the "Download CSV" button.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React
+- Material-UI
+- PapaParse
